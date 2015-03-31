@@ -1,0 +1,14 @@
+script:
+- mkdir _build
+- pdflatex -output-directory _build tex/your_file_1.tex
+- pdflatex -output-directory _build tex/your_file_2.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: [YOUR KEY]
+  file:
+  - _build/your_file_1.pdf
+  - _build/your_file_2.pdf
+  skip_cleanup: true
+  on:
+    tags: true

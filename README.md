@@ -1,2 +1,3 @@
-# travis-ci-latex-pdf
-Setup Travis-CI continuous integration and deployment service to build PDF from LaTeX document.
+# Travis CI LaTeX PDF build
+
+Setup Travis CI continuous integration and deployment service to build PDF from LaTeX document.
